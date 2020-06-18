@@ -26,6 +26,7 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var calculateOutlet: UIButton!
     
 
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +37,6 @@ class CalculatorViewController: UIViewController {
         self.plusMinusOutlet.tintColor = .none
         self.plusMinusOutlet.layer.borderWidth = 1
         self.plusMinusOutlet.layer.borderColor = #colorLiteral(red: 0.9254901961, green: 0.4431372549, blue: 0.2862745098, alpha: 1)
-        self.plusMinusOutlet.layer.shadowColor = #colorLiteral(red: 0.9254901961, green: 0.4431372549, blue: 0.2862745098, alpha: 1)
         //настраиваем цвет кнопки calculate
         self.calculateOutlet.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.4431372549, blue: 0.2862745098, alpha: 1)
         //настраиваем цвет остального текста
