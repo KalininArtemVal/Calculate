@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T76-Me-1kK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T76-Me-1kK">
                                 <rect key="frame" x="16" y="32" width="343" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -49,8 +49,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6J-7C-Xjw">
-                                <rect key="frame" x="16" y="167" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1.0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6J-7C-Xjw">
+                                <rect key="frame" x="16" y="167" width="127" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -62,20 +62,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6uV-DI-bty">
-                                <rect key="frame" x="249" y="161" width="94" height="32"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="265" y="161" width="94" height="32"/>
+                                <color key="tintColor" red="0.92549019607843142" green="0.44313725490196076" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="plusMinusButton:" destination="BYZ-38-t0r" eventType="valueChanged" id="jBr-Eg-mWK"/>
                                 </connections>
                             </stepper>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="H5k-J4-RDz">
-                                <rect key="frame" x="243" y="262" width="118" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="H5k-J4-RDz">
+                                <rect key="frame" x="257" y="262" width="104" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="f8f-o7-9gh"/>
+                                </constraints>
                                 <connections>
                                     <action selector="sliderButton:" destination="BYZ-38-t0r" eventType="valueChanged" id="wjW-qB-pe1"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcp-sS-ETD">
-                                <rect key="frame" x="16" y="267" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1.0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcp-sS-ETD">
+                                <rect key="frame" x="16" y="267" width="127" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -89,7 +92,6 @@
                             <constraint firstItem="T76-Me-1kK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="69C-yE-LnC"/>
                             <constraint firstItem="Dy0-hy-hVQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="GUQ-jr-Due"/>
                             <constraint firstItem="I6J-7C-Xjw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="L8K-Lm-ukg"/>
-                            <constraint firstItem="H5k-J4-RDz" firstAttribute="leading" secondItem="tcp-sS-ETD" secondAttribute="trailing" constant="187" id="N3b-Gf-igo"/>
                             <constraint firstItem="H5k-J4-RDz" firstAttribute="top" secondItem="HXa-i6-GH5" secondAttribute="bottom" constant="16" id="PzZ-JQ-2cT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6uV-DI-bty" secondAttribute="trailing" constant="16" id="Qxi-dl-SZt"/>
                             <constraint firstItem="T76-Me-1kK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="T8d-2h-hn4"/>
@@ -100,6 +102,7 @@
                             <constraint firstItem="LtI-iM-MHU" firstAttribute="top" secondItem="cvb-Yt-yRH" secondAttribute="bottom" constant="16" id="hWP-FZ-xN3"/>
                             <constraint firstAttribute="trailing" secondItem="H5k-J4-RDz" secondAttribute="trailing" constant="16" id="iej-AG-mgZ"/>
                             <constraint firstItem="HXa-i6-GH5" firstAttribute="top" secondItem="6uV-DI-bty" secondAttribute="bottom" constant="32" id="kEc-FF-VKc"/>
+                            <constraint firstAttribute="trailing" secondItem="6uV-DI-bty" secondAttribute="trailing" constant="16" id="lmP-md-J5r"/>
                             <constraint firstAttribute="trailing" secondItem="T76-Me-1kK" secondAttribute="trailing" constant="16" id="pp8-6K-O0g"/>
                             <constraint firstItem="T76-Me-1kK" firstAttribute="top" secondItem="AVO-Y3-Wox" secondAttribute="bottom" constant="32" id="qpB-Qk-frG"/>
                             <constraint firstItem="Dy0-hy-hVQ" firstAttribute="top" secondItem="T76-Me-1kK" secondAttribute="bottom" constant="32" id="utL-Mh-imx"/>
